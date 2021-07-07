@@ -2,8 +2,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        //dataStructuresTest();
-        binaryTreeTest();
+        // dataStructuresTest();
+        // binaryTreeTest();
+        linkedListTest();
     }
 
     public static void dataStructuresTest() {
@@ -25,6 +26,18 @@ public class Main {
         System.out.println(t.preorder());
         System.out.println(t.inorder());
         System.out.println(t.postorder());
+    }
+
+    public static void linkedListTest() {
+        MyLinkedList<Integer> list = new MyLinkedList<>();
+        System.out.println(list.size());
+        list.add(5);
+        list.add(6);
+        list.add(1, 8);
+        list.add(2, 13);
+        int i = list.remove(2);
+        System.out.println(i);
+        System.out.println(list);
     }
 
     public static List<Integer> randomizer(List<Integer> list) {
